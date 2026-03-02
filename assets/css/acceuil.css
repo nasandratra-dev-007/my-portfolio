@@ -1,9 +1,43 @@
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/space-grotesk/static/SpaceGrotesk-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/space-grotesk/static/SpaceGrotesk-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/space-grotesk/static/SpaceGrotesk-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/space-grotesk/static/SpaceGrotesk-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* navbar portfolio     */
 body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background: #1E1E1E;
+    font-family: "SpaceGrotesk"  
     /* background: url("image/code.PNG"); */
 }
 
@@ -19,6 +53,10 @@ body{
 
 .navbar a {
     text-decoration: none;
+}
+
+.navbar .me {
+    font-weight: 800;
 }
 
 .navbar .link a::after {
@@ -47,6 +85,8 @@ body{
 
 .navbar .link a {
     color: white;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .navbar .link a {
@@ -66,6 +106,8 @@ body{
     background: #99FFCC;
     color: #1E1E1E;
     transition: .4s;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .navbar .right-content .contact:hover {
@@ -109,31 +151,39 @@ body{
     display: flex;
     flex-direction: column;
     line-height: 5px;
+    
     /* border: 1px solid red; */
 }
 
 .home .about-me .text-content .name .hey {
     margin-left: 5PX;
+    font-weight: 800;
 }
 
 .home .about-me .text-content .name .rabe {
     margin-left: 20px;
+    font-weight: 800;
 }
 
 .home .about-me .text-content .name .prenom {
     margin-left: 100px;
+    font-weight: bold;
 }
 
 .home .about-me .text-content p {
     margin-left: 20px;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 25.6px;
+    font-weight: 400;
+    color: #6c757d;
 }
 
 span {
     background: #99FFCC;
     color: #1E1E1E;
     padding: 10px 10px 10px 10px;
-    border-radius: 5px;    
+    border-radius: 5px;
+    font-weight: 800;    
 }
 
 .home .about-me {
@@ -162,6 +212,8 @@ span {
     border-radius: 10px;
     border: 2px solid #99FFCC;
     transition: .3s ease;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .home .about-me .link-content .projets:hover {
@@ -174,6 +226,8 @@ span {
     color: #99FFCC;
     border-radius: 10px;
     transition: .3s ease;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .home .about-me .link-content .whithme:hover {
