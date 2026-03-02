@@ -1,0 +1,189 @@
+/* navbar portfolio     */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #1E1E1E;
+    /* background: url("image/code.PNG"); */
+}
+
+.navbar {
+    padding: 0px 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* z-index: 2; */
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar .link a::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    display: block;
+    background-color: #99FFCC;
+    transition: .3s ease-in-out;
+}
+
+.navbar .link a:hover::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: #99FFCC;
+}
+
+.navbar .link {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: relative;
+}
+
+.navbar .link a {
+    color: white;
+}
+
+.navbar .link a {
+    /* border: 1px solid black; */
+    padding: 5px 25px;
+    transition: 1s;
+}
+
+/* .navbar .link a:hover{
+    border-bottom: 1px solid red;
+} */
+
+.navbar .right-content .contact {
+    border: 1.8px solid #99FFCC;
+    border-radius: 20px;
+    padding: 10px 25px;
+    background: #99FFCC;
+    color: #1E1E1E;
+    transition: .4s;
+}
+
+.navbar .right-content .contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px #99FFCC;
+}
+
+.navbar .right-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar .right-content .git {
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 25px;
+}
+
+/* main porfolio */
+.home{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    gap: 30px;
+}
+
+.home .about-me .text-content {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home .about-me .text-content .name {
+    display: flex;
+    flex-direction: column;
+    line-height: 5px;
+    /* border: 1px solid red; */
+}
+
+.home .about-me .text-content .name .hey {
+    margin-left: 5PX;
+}
+
+.home .about-me .text-content .name .rabe {
+    margin-left: 20px;
+}
+
+.home .about-me .text-content .name .prenom {
+    margin-left: 100px;
+}
+
+.home .about-me .text-content p {
+    margin-left: 20px;
+    line-height: 1.4;
+}
+
+span {
+    background: #99FFCC;
+    color: #1E1E1E;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;    
+}
+
+.home .about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.home .about-me .link-content{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 20px 40px;
+}
+
+.home .about-me .link-content a {
+    padding: 20px 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.home .about-me .link-content .projets{
+    background: #99FFCC;
+    color: #1E1E1E;
+    border-radius: 10px;
+    border: 2px solid #99FFCC;
+    transition: .3s ease;
+}
+
+.home .about-me .link-content .projets:hover {
+    background: #1E1E1E;
+    color: #99FFCC;
+}
+
+.home .about-me .link-content .whithme {
+    border: 2px solid #99FFCC;
+    color: #99FFCC;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+.home .about-me .link-content .whithme:hover {
+    background: #99FFCC;
+    color: #1E1E1E;
+}
+
+.home img {
+    filter: blur(10px);
+    display: flex;
+    justify-content: center;
+}
+
