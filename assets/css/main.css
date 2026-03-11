@@ -65,6 +65,22 @@ body {
 .navbar .nav-links a {
   text-decoration: none;
   color: white;
+  position: relative;
+  font-size: 15px;
+}
+.navbar .nav-links a::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  height: 2px;
+  width: 0%;
+  display: block;
+  background-color: #99ffcc;
+  transition: 0.2s ease-in-out;
+}
+.navbar .nav-links a:hover::after {
+  width: 100%;
 }
 .navbar .cta-section {
   display: flex;
