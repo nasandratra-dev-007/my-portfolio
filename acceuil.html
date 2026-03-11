@@ -3,41 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/acceuil.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <h3 class="me">FAH.</h3>
             <div class="link">
-                <a href="">Acceuil</a>
-                <a href="">Services</a>
-                <a href="">Competance</a>
-                <a href="">Projets</a>
+                <a href="#acceuil">Acceuil</a>
+                <a href="#service">Services</a>
+                <a href="#projet">Projets</a>
             </div>
             <div class="right-content">
-                <a href="" class="contact">contacts</a>
+                <a href="#contact" class="contact">contacts</a>
                 <a href=""><img src="assets/image/25231.png" alt="" class="git"></a>
             </div>
         </nav>
     </header>
-    <main class="home">
-        <div class="about-me">
-            <div class="text-content">
-                <div class="name">
-                    <h2 class="hey">Hey , je suis</h2>
-                    <h1 class="rabe">RABEHEVITRA</h1>
-                    <h1 class="prenom">Fanantenana <span>Nasandratra.</span></h1>
+    <section id="acceuil">
+        <main class="home">
+            <div class="about-me">
+                <div class="text-content">
+                    <div class="name">
+                        <h2 class="hey">Hey , je suis</h2>
+                        <h1 class="rabe">RABEHEVITRA</h1>
+                        <h1 class="prenom">Fanantenana <span>Nasandratra.</span></h1>
+                    </div>
+                    <p>Un developpeur web motive, passionne par la creation de site moderne. Une approche rigoureuse, plus orientee vers la performance et l'experience utilisateur. Une mode de travail organise,precis et aligner sur la qualite.</p>
                 </div>
-                <p>Un developpeur web motive, passionne par la creation de site moderne. Une approche rigoureuse, plus orientee vers la performance et l'experience utilisateur. Une mode de travail organise,precis et aligner sur la qualite.</p>
+                <dev class="link-content">
+                    <a href="#projet" class="projets">Voir mes projets</a>
+                    <a href="#contact" class="whithme">Travailler avec moi</a>
+                </dev>
             </div>
-            <dev class="link-content">
-                <a href="" class="projets">Voir mes projets</a>
-                <a href="" class="whithme">Travailler avec moi</a>
-            </dev>
+            <div class="image">
+                <img src="assets/image/Faah.jpg" alt="" width="600px" height="600px">
+            </div>
+        </main>
+    </section>
+    <section id="service" class="service">
+        <div class="title">
+            <h1><span>Mon <span class="color">services</span></span></h1>
+            <p>Je developpe des applications web, performantes et sécurisées, adaptées aux besoins spévifiques de chaque client.</p>
         </div>
-        <img src="assets/image/ChatGPT Image 2 mars 2026, 22_32_53.png" alt="" width="600px" height="600px">
-    </main>
+        <div class="card">
+            <div class="dev_service">
+                <img src="./assets/image/dev.png" alt="">
+                <div class="text_content">
+                    <h1>Développement web</h1>
+                    <p>Je développe des applications web et mobiles robustes, performantes et sécurisées, adaptées aux besoins spécifiques de chaque clien.</p>
+                </div>
+            </div>
+            <div class="design_service">
+                <img src="./assets/image/ui-ux.png" alt="">
+                <div class="text_content">
+                    <h1>UI/UX Design</h1>
+                    <p>Nous créons des expériences utilisateur intultive, esthétiques et centrées sur l'humain. chaque interface est conçue pour guider l'utilisateur, simplifier les parcours et maximiser l'angagement, tout en respectant l'identité de votre marque. </p>
+                </div>
+            </div>
+            <div class="conseil_service">
+                <img src="./assets/image/conseil.png" alt="">
+                <div class="text_content">
+                    <h1>Conseil & stratégie Digitale</h1>
+                    <p>Accompagnement du client dès les premières réflexions stratégiques afin de poser des bases solides. J'aide à définir la bonne vision produit, les priorités et la meilleure approche technique et business.</p>
+                </div>
+            </div>    
+            <div class="ME_service">
+                <img src="./assets/image/intégrateur-web.png" alt="">
+                <div class="text_content">
+                    <h1>Maintenance & Evolution</h1>
+                    <p>Un produit digital ne s'arrete pas au lancement. L'assurance du suivi, la maintenance et l'evolution continue de vos solution pour garantir leur stabilité et leur pertinence dans le temsps</p>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <section id="projet">
+        <div class="card_projet">
+            <div class="card-f">
+                <div class="img_box">
+                    <img src="./assets/image/longoe1.PNG" alt="">
+                </div>     
+                <div class="text-content">
+                    <div>
+                        <h3><span>LONGO E-1</span></h3>
+                        <p>Un projet fait par notre groupe en une matière enseigner par Dr Brice à l'Université de Fianarantsoa. En utilisant la laguage HTML,CSS et quelque Java Script ; l'equipe a fais une effort pour finir le projet avec succes. </p>
+                    </div>
+                    <a href="https://longoe-1.surge.sh/">Consulter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <footer>
+            <div class="last_page">
+                <div class="message">
+                    <div class="titre"> 
+                        <h1>Parlons de <span>votre projet</span></h1>
+                        <p>Avez vous une idée; un projet ou une collaboration en tete ?
+                            Contactez-moi et construisons ensemble une solution digitale adaptée à vos objectifs</p>
+                    </div>
+                    <form action="" class="contact-from">
+                        <div class="ajout">
+                            <label for="text">Nom</label>
+                            <input type="text" placeholder="RABEHEVITRA Fanantenana" required>
+                        </div>
+                        <div class="ajout">
+                            <label for="e-mail">e-mail</label>
+                            <input type="email" placeholder="xxxxxxxxxxxxx@gmail.com" required>
+                        </div>
+                        <div class="ajout">
+                            <label for="text">Message</label>
+                            <textarea name="message" id="mess" placeholder="Votre message">Votre message</textarea>
+                        </div>
+                        <div class="btn-send"><button type="submit"><img src="./assets/icone/avion-en-papier.gif" alt="" width="40px" height="40px"> Envoyer</button></div>
+                    </form>
+                </div>
+                <div class="thanks">
+                    <div class="cv-down">
+                        <div class="text-content">
+                            <h1>Je vous remercie de visitez mon portfolio</h1>
+                            <p>Si vous etes intéressés sur mon mode de travail , mon competence et mes projet;télécharger mon CV pour plus de description</p>
+                        </div>
+                        <div class="btn"><button type="download"><img src="./assets/icone/telecharger.gif" alt="" width="40px" height="40px"> Télécharger mon CV</button></div>
+                    </div>
+                    <div class="Mien">
+                    </div>  
+                </div>
+            </div>
+        </footer>
+    </section>
 </body>
 </html>
