@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nasandratra Rabehevitra - Portofolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
-    
+    <h3>mina cscs</h3>
+
+    <!-- lenis scroll script -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            smooth: true
+        })
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+        requestAnimationFrame(raf)
+    </script>
 </body>
+
 </html>
